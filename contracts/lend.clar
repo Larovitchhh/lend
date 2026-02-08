@@ -2,7 +2,7 @@
 (impl-trait 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard.sip-010-trait)
 
 ;; Define the FT, with no maximum supply
-(define-fungible-token clarity-coin)
+(define-fungible-token lend)
 
 ;; Define errors
 (define-constant ERR_OWNER_ONLY (err u100))
@@ -11,8 +11,8 @@
 ;; Define constants for contract
 (define-constant CONTRACT_OWNER tx-sender)
 (define-constant TOKEN_URI u"https://hiro.so") ;; utf-8 string with token metadata host
-(define-constant TOKEN_NAME "Clarity Coin")
-(define-constant TOKEN_SYMBOL "CC")
+(define-constant TOKEN_NAME "lend")
+(define-constant TOKEN_SYMBOL "lend")
 (define-constant TOKEN_DECIMALS u6) ;; 6 units displayed past decimal, e.g. 1.000_000 = 1 token
 
 ;; SIP-010 function: Get the token balance of a specified principal
